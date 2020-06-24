@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta id="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <meta name="theme-color" content="#000000" />
+    <meta name="referrer" content="never">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="shortcut icon" href="https://file.qianyaru.cn/logo_blog_favicon.ico" />
+    <title id="title">Khari & Yaru 美好记忆</title>
+    <meta name="baidu-site-verification" content="7XGPmF2RtW" />
+    <meta id="keywords" name="keywords" content="Khari,Yaru,生活,美好记忆" />
+    <meta id="description" name="description" content="记录生活点滴"/>
+    <link href="https://file.qianyaru.cn/cdn-froala-editor/css/froala_editor.min.css" rel="stylesheet">
+    <link href="https://file.qianyaru.cn/cdn-froala-editor/css/froala_editor.pkgd.min.css" rel="stylesheet">
+    <link rel="prefetch" href="https://file.qianyaru.cn/cdn-froala-editor/js/froala_editor.pkgd.min.js" as="script">
+    <link rel="prefetch" href="https://cdn.bootcdn.net/ajax/libs/jquery/3.4.0/jquery.min.js" as="script">
+    <style>
+      body *{
+        cursor: url('https://file.qianyaru.cn/cur.cur'),auto !important;
+      }
+      body a:hover,body li:hover,body span:hover,body button{
+        cursor: url('https://file.qianyaru.cn/fcous.cur'),auto !important;
+      }
+      .fr-wrapper > div[style*='z-index: 9999'] {
+        display: none;
+      }
+      a[href="https://froala.com/wysiwyg-editor"], a[href="https://www.froala.com/wysiwyg-editor?k=u"] {
+        display: none !important;
+        position: absolute;
+        top: -99999999px;
+      }
+    </style>
+    <% if (process.env.NODE_ENV == 'production') { %>
+      <script>Blob = void 0</script>
+      <script>window.addEventListener('load', function () { var iframe = document.createElement('iframe'); iframe.style.display = 'none'; document.body.appendChild(iframe); Blob = iframe.contentWindow.Blob })</script>
+    <% } %>
+  </head>
+  <body>
+    <div id="root">
+      <!-- 首屏加载动画 -->
+      <div style="text-align: center; height: 300px; margin-top: 15%">
+        <img src="img/loading.svg" alt="加载中···"/>    
+        <p style="margin-top: 30px;">因服务器配置原因，初次加载资源可能较慢，请耐心等待哦~</p>
+      </div>
+    </div>
+    <% if (process.env.NODE_ENV == 'production') { %>
+      <script crossorigin src="https://file.qianyaru.cn/cdn-react/js/react.production.min.js"></script>
+      <script crossorigin src="https://file.qianyaru.cn/cdn-react/js/react-dom.production.min.js"></script>
+    <% } %>
+    <% if (process.env.NODE_ENV == 'development') { %>
+      <script crossorigin src="https://unpkg.com/react@16.8.4/umd/react.development.js"></script>
+      <script crossorigin src="https://unpkg.com/react-dom@16.8.4/umd/react-dom.development.js"></script>
+    <% } %>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://file.qianyaru.cn/cdn-froala-editor/js/froala_editor.pkgd.min.js"></script>
+  </body>
+</html>

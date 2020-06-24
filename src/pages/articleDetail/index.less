@@ -1,0 +1,186 @@
+.article {
+    background-color: #ffffff;
+    padding: 10px 15px 10px 15px;
+    margin-top: 24px;
+    border-radius: 5px;
+	.header{
+        .title{
+            margin: 20px 0 0;
+            text-align: center;
+            font-size: 34px;
+            font-weight: bold;
+        }
+        .author {
+            position: relative;
+            margin: 30px 0 40px;
+            padding-left: 50px;
+            .avatar {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 48px;
+                height: 48px;
+                vertical-align: middle;
+                display: inline-block;
+            }
+            .info {
+                float: left;
+                vertical-align: middle;
+                display: inline-block;
+                margin-left: 8px;
+                a{
+                    color: #333;
+                }
+            }
+            .name {
+                margin-right: 3px;
+                font-size: 16px;
+                vertical-align: middle;
+            }
+            .meta {
+                margin-top: 5px;
+                font-size: 12px;
+                color: #969696;
+                span {
+                    padding-right: 5px;
+                }
+            }
+            .tags{
+                float: right;
+                padding-top: 15px;
+                padding-right: 20px;
+                .tag{
+                    padding: 0 10px;
+                    border-right: 2px solid #eee;
+                }
+            }
+        }
+    }
+    .content{
+        min-height: 300px;
+        img{
+            max-width: 100%;
+            margin: 20px auto;
+        }
+    }
+}
+.heart{
+    height: 60px;
+    text-align: center;
+    margin: 30px;
+    .ant-btn-danger{
+        border-color: #ff57a0;
+    }
+}
+.ant-btn-danger{
+    color: #ff57a0;
+}
+.ant-btn-danger:active{
+    color:#ffffff;
+}
+.ant-btn-danger:hover{
+    color:#ff57a0;
+    background-color: #ffffff;
+}
+.ant-btn-danger:focus{
+    color:#ff57a0;
+    background-color: #ffffff;
+}
+.loader{
+	color: #999;
+	text-align: center;
+    padding: 50px;
+    font-size: 16px;
+}
+.clearfix{
+    clear: both;
+}
+
+/*对 markdown 样式的补充*/
+
+pre {
+    display: block;
+    padding: 10px;
+    margin: 0 0 10px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #abb2bf;
+    background: #23241f;
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: auto;
+    border-radius: 5px;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 1em;
+    /* margin-bottom: 1em; */
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  
+  p > code:not([class]) {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+  }
+  
+  p img {
+    /* 图片居中 */
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  table {
+    text-align: center;
+    border: 1px solid #ddd;
+    margin-bottom: 1.5em;
+  }
+  tr {
+    border-bottom: 1px solid #ddd;
+  }
+  th,
+  td {
+    text-align: center;
+    padding: 0.3em;
+  }
+  
+  #content {
+    font-family: 'Microsoft YaHei', 'sans-serif';
+    font-size: 16px;
+    line-height: 30px;
+  }
+  
+  #content .desc ul,
+  #content .desc ol {
+    color: #333333;
+    margin: 1.5em 0 0 25px;
+  }
+  
+  #content .desc h1,
+  #content .desc h2 {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  #content .desc a {
+    color: #009a61;
+  }
+  
+  #content blockquote {
+    margin: 0 0 1em;
+    background-color: rgb(220, 230, 240);
+    padding: 1em 0 0.5em 0.5em;
+    border-left: 6px solid rgb(181, 204, 226);
+  }
+  
