@@ -3,7 +3,7 @@ module.exports = {
     'access_token_path': 'https://graph.qq.com/oauth2.0/token',
     'openid_path': 'https://graph.qq.com/oauth2.0/me',
     'user_info_path':'https://graph.qq.com/user/get_user_info',
-    'client_id': '101882203',
-    'client_secret': '40b14d0a55e194694e6db2c89e5af000',
+    'client_id': '',// QQ互联应用的appid
+    'client_secret': '',//QQ互联应用的appkey
     'scope': ['user'],
 };
