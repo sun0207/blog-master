@@ -31,7 +31,7 @@
     "file-loader": "2.0.0",
     "font-awesome": "^4.7.0",
     "fs-extra": "7.0.1",
-    "highlight.js": "^9.15.6",
+    "highlight.js": "^10.4.1",
     "html-webpack-plugin": "4.0.0-alpha.2",
     "id3-parser": "^2.0.0",
     "identity-obj-proxy": "3.0.0",
